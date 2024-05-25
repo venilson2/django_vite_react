@@ -17,6 +17,7 @@ export type PageViews = {
 	view: string
 }
 
+
 export type TrafficReport = {
 	channel: string
 	session: {
@@ -29,6 +30,14 @@ export type TrafficReport = {
 	}
 	change: number
 	variant: string
+}
+
+export type SalesReport = {
+	product: string
+	location: string
+	datetime: string
+	value: number
+	status: string
 }
 
 export type BrowserReport = {

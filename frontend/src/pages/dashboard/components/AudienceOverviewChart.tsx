@@ -13,7 +13,7 @@ const AudienceOverviewChart = () => {
 				autoSelected: 'zoom',
 			},
 		},
-		colors: ['#d7d1c1', '#68846b'],
+		colors: ['#68846b'],
 		dataLabels: {
 			enabled: false,
 		},
@@ -38,11 +38,7 @@ const AudienceOverviewChart = () => {
 		},
 		series: [
 			{
-				name: 'New Visits',
-				data: [0, 60, 20, 90, 45, 110, 55, 130, 44, 110, 75, 120],
-			},
-			{
-				name: 'Unique Visits',
+				name: 'Vendas',
 				data: [0, 45, 10, 75, 35, 94, 40, 115, 30, 105, 65, 110],
 			},
 		],
@@ -50,15 +46,15 @@ const AudienceOverviewChart = () => {
 		xaxis: {
 			categories: [
 				'Jan',
-				'Feb',
+				'Fev',
 				'Mar',
-				'Apr',
-				'May',
+				'Abr',
+				'Mai',
 				'Jun',
 				'Jul',
 				'Aug',
-				'Sep',
-				'Oct',
+				'Set',
+				'Out',
 				'Nov',
 				'Dec',
 			],

@@ -27,7 +27,7 @@ const ComponentContainerCard = ({
 			<CardHeader>
 				<Row className="align-items-center">
 					<Col>
-						<h4 className="card-title">{title}</h4>
+						<h3 className="">{title}</h3>
 						{description && <p className="text-muted mb-0">{description}</p>}
 					</Col>
 					{menuItems && (

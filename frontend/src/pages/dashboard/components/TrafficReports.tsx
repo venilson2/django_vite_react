@@ -1,48 +1,43 @@
 import { ComponentContainerCard } from '@/components'
 import { Link } from 'react-router-dom'
-import { trafficReports } from '../data'
+import { salesReports, trafficReports } from '../data'
+import { Badge } from 'react-bootstrap'
 
 const TrafficReports = () => {
 	return (
 		<ComponentContainerCard title="Últimas Vendas">
-			<div className="table-responsive browser_users">
-				<table className="table mb-0">
-					<thead className="thead-light">
+			<div className="table-responsive  rounded border">
+				<table className="table mb-0 ">
+					<thead className="fully-sense-bg-neutral-6 ">
 						<tr>
-							<th className="border-top-0">Channel</th>
-							<th className="border-top-0">Sessions</th>
-							<th className="border-top-0">Prev.Period</th>
-							<th className="border-top-0">% Change</th>
+							<th className="">Produto</th>
+							<th className="">Localização</th>
+							<th className="">Data - Horário </th>
+							<th className="">Valor</th>
+							<th className="">Status</th>
 						</tr>
 					</thead>
 					<tbody>
-						{trafficReports.map((report, idx) => {
+						{salesReports.map((sales, idx) => {
 							return (
 								<tr key={idx}>
 									<td>
-										<Link to="" className="text-primary">
-											{report.channel}
-										</Link>
+										{sales.product}
 									</td>
 									<td>
-										{report.session.state}
-										<small className="text-muted">
-											({report.session.change}%)
-										</small>
+									{sales.location}
 									</td>
 									<td>
-										{report.prevPeriod.state}
-										<small className="text-muted">
-											({report.prevPeriod.change}%)
-										</small>
+										{sales.datetime}
 									</td>
 									<td>
-										{report.variant == 'danger' && '-'}
-										{report.change}%{' '}
-										{report.variant == 'danger' ? (
-											<i className={`fas fa-caret-down text-danger font-16`} />
-										) : (
-											<i className="fas fa-caret-up text-success font-16" />
+										{sales.value}
+									</td>
+									<td>
+										{sales.status == 'Completed' ? (
+											<Badge pill bg='success' className='p-2'>Completo</Badge>
+										): (
+											<Badge pill bg='danger' className='p-2'>Cancelado</Badge>
 										)}
 									</td>
 								</tr>
