@@ -25,11 +25,6 @@ export type MenuItemType = {
 
 export const VERTICAL_MENU_ITEMS: MenuItemType[] = [
 	{
-		key: 'main',
-		label: '',
-		isTitle: true,
-	},
-	{
 		key: 'dashboard',
 		label: 'Visão Geral',
 		isTitle: false,
@@ -43,7 +38,7 @@ export const VERTICAL_MENU_ITEMS: MenuItemType[] = [
 		isTitle: false,
 		children: [
 			{
-				key: 'ds-sales',
+				key: 'sales',
 				label: 'Vendas',
 				url: '/afiliados/vendas',
 			}

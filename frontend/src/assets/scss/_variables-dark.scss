@@ -18,21 +18,21 @@ $header-icon-color:                       #b9c4ce;
 $header-icon-dark-color:                  #c2cbe2;
 $header-item-color:                       #b9c4ce;
 $header-item-dark-color:                  #c2cbe2;
-$header-item-active-color:                #2f6bf9;
+$header-item-active-color:                #68846b;
 $header-item-dark-active-color:           #ffffff;
-$header-item-hover-color:                 #2f6bf9;
+$header-item-hover-color:                 #68846b;
 $header-item-hover-bg:                    #2c3144;
 
 // Sidebar Variables
 $sidebar-hr:                              #49516d;
 $sidebar-label-color:                     #8491b7;
 $sidebar-icon-color:                      #7081b9;
-$sidebar-icon-hover-color:                #2f6bf9;
+$sidebar-icon-hover-color:                #68846b;
 $sidebar-item-color:                      #9fa8bf;
-$sidebar-item-hover-color:                #2f6bf9;
+$sidebar-item-hover-color:                #68846b;
 $sidebar-item-active-color:               #e6e9f1;
 $sidebar-sub-item-color:                  #9fa8bf;
-$sidebar-sub-item-hover-color:            #2f6bf9;
+$sidebar-sub-item-hover-color:            #68846b;
 $sidebar-sub-item-active-color:           #6374ff;
 $sidebar-arrow-color:                     #7e88a0;
 
@@ -54,7 +54,7 @@ $sidebar-sub-item-active-dark-color:      #007cfb;
 
 // Horizontal
 $navbar-icon-color:                       #6a718e;
-$navbar-icon-dark-color:                  #2f6bf9;
+$navbar-icon-dark-color:                  #68846b;
 $submenu-bg:                              #2f3447;
 $submenu-border-color:                    #343b52;
 $mobile-menu-item-color:                  #c0cada;
@@ -150,18 +150,19 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables /Change
-$blue:    #1761fd;
-$indigo:  #6610f2;
-$purple:  #6d81f5;
-$pink:    #fd3c97;
-$red:     #f5325c;
-$orange:  #ff8500;
-$yellow:  #ffb822;
-$green:   #22b783;
-$teal:    #03d87f;
-$cyan:    #12a4ed;
-$beanred: #FE6B8B;
-$gray:    #9ba7ca;
+$blue:      #1761fd;
+$indigo:    #6610f2;
+$purple:    #6d81f5;
+$pink:      #fd3c97;
+$red:       #f93c65;
+$orange:    #f0a35d;
+$yellow:    #ffb822;
+$green-dark:#1e352f;
+$green:     #68846b;
+$teal:      #39c6b1;
+$cyan:      #12a4ed;
+$beanred:   #FE6B8B;
+$gray:      #9ba7ca;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map /Change
@@ -173,7 +174,7 @@ $colors: (
   "red":        $red,
   "orange":     $orange,
   "yellow":     $yellow,
-  "green":      $green,
+  "green-dark": $green-dark,
   "teal":       $teal,
   "cyan":       $cyan,
   "white":      $white,
@@ -182,7 +183,7 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables /Change
-$primary:       $blue;
+$primary:       $green;
 $secondary:     $gray;
 $success:       $teal;
 $info:          $cyan;
