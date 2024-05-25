@@ -12,7 +12,37 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="http://localhost:8000/static/images/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <title>Fully Sense</title>
+  <style>
+    #splash-screen {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      background: white;
+      display: flex;
+      height: 100%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      opacity: 1;
+      transition: all 15s linear;
+      overflow: hidden;
+    }
+    
+    #splash-screen.remove {
+      animation: fadeout 0.7s forwards;
+      z-index: 0;
+    }
+    
+    @keyframes fadeout {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  </style>
 
   {% if debug %}
   <script type="module" src="http://localhost:5173/@vite/client"></script>
@@ -32,6 +62,9 @@
 
 <body>
   <div id="root"></div>
+  <div id="splash-screen">
+    <img alt="Logo" class="light" src="http://localhost:8000/static/images/logo-sm.png" style="height: 8%" />&nbsp;<h1>Dastone</h1>
+  </div>
   {% if debug %}
   <!-- This url will be different for each type of app. Point it to your main js file. -->
   <script type="module" src="http://localhost:5173/src/main.tsx"></script>

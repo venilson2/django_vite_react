@@ -56,7 +56,7 @@ const callData: CallWidgetType[] = [
 
 const pageViewsData: PageViewsType[] = [
 	{
-		name: 'Dastone - Admin Dashboard',
+		name: 'Fully Sense',
 		subName: 'analytic-index.html',
 		logo: logo1,
 		view: '4.3k',
