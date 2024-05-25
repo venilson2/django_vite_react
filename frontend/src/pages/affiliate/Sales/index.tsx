@@ -6,11 +6,12 @@ import ChartWidget from './components/ChartWidget'
 import EarrnigReportChart from './components/EarrnigReportChart'
 import EarningReports from './components/EarningReports'
 import PopulerProducts from './components/PopulerProducts'
+import DataTables from '@/pages/ui-kit/tables/DataTables'
 
 const Sales = () => {
 	return (
 		<>
-			<PageBreadcrumb subName="Dashboard" title="Sales" />
+			<PageBreadcrumb subName="Afiliados" title="Vendas" />
 			<Row>
 				<Col lg={9}>
 					<RevenuStatus />
@@ -28,6 +29,11 @@ const Sales = () => {
 				</Col>
 				<Col lg={6}>
 					<PopulerProducts />
+				</Col>
+			</Row>
+			<Row>
+				<Col lg={12}>
+					<DataTables />
 				</Col>
 			</Row>
 		</>

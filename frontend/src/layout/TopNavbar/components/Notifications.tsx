@@ -68,7 +68,7 @@ const Notifications = ({
 			</DropdownToggle>
 			<DropdownMenu className="dropdown-menu-end dropdown-lg pt-0">
 				<h6 className="dropdown-item-text font-15 m-0 py-3 border-bottom d-flex justify-content-between align-items-center">
-					Notifications <span className="badge bg-primary rounded-pill">2</span>
+					Notificação <span className="badge bg-primary rounded-pill">2</span>
 				</h6>
 				<SimpleBar className="notification-menu">
 					{notifications.map((item, idx) => {
