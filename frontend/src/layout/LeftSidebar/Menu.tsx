@@ -52,16 +52,16 @@ const MenuItemWithChildren = ({
 			>
 				{Icon && (
 					<span>
-						<Icon size={18} className="menu-icon align-self-center" />
+						<Icon size={18} className="menu-icon align-self-center" color='#68846b' />
 					</span>
 				)}
-				<span> {item.label}</span>
+				<span className='fw-normal'> {item.label}</span>
 				{!item.badge ? (
 					<span className="menu-arrow">
 						<i className="mdi mdi-chevron-right"></i>
 					</span>
 				) : (
-					<span className={`badge bg-${item.badge.variant} ms-auto`}>
+					<span className={`badge bg-${item.badge.variant} ms-auto `}>
 						{item.badge.text}
 					</span>
 				)}
@@ -122,11 +122,11 @@ const MenuItemLink = ({ item, className }: SubMenus) => {
 			data-menu-key={item.key}
 		>
 			{Icon ? (
-				<Icon size={18} className="menu-icon align-self-center" />
+				<Icon size={18} className="menu-icon align-self-center" color='#68846b'/>
 			) : (
 				<i className="ti-control-record" />
 			)}
-			{item.label}
+			<span className='fw-normal' >{item.label}</span>
 			{item.badge && (
 				<span className={`badge bg-${item.badge.variant} ms-auto`}>
 					{item.badge.text}

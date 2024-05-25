@@ -4,7 +4,7 @@ import AudienceOverviewChart from './components/AudienceOverviewChart'
 import TrafficReports from './components/TrafficReports'
 import WelcomeHeader from '@/components/WelcomeHeader'
 
-const Analytics = () => (
+const Dashboard = () => (
 	<>
 		<WelcomeHeader title="Admin" />
 		<Row>
@@ -21,4 +21,4 @@ const Analytics = () => (
 	</>
 )
 
-export default Analytics
+export default Dashboard
