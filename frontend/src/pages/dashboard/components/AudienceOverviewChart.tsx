@@ -91,7 +91,7 @@ const AudienceOverviewChart = () => {
 	}
 	return (
 		<ComponentContainerCard
-			title="Audience Overview"
+			title="Vendas"
 			label="This Year"
 			menuItems={['Today', 'Last Week', 'Last Month', 'This Year']}
 		>

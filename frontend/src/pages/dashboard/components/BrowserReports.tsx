@@ -4,7 +4,7 @@ import { browserReports } from '../data'
 
 const BrowserReports = () => {
 	return (
-		<ComponentContainerCard title="Browser Used & Traffic Reports">
+		<ComponentContainerCard title="Últimas Vendas">
 			<div className="table-responsive browser_users">
 				<table className="table mb-0">
 					<thead className="thead-light">

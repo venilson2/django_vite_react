@@ -46,13 +46,6 @@ const LeftSidebar = () => {
 					>
 						<i className="mdi mdi-close"></i>
 					</Link>
-					<h5 className="mt-3">Mannat Themes</h5>
-					<p className="mb-3">
-						We Design and Develop Clean and High Quality Web Applications
-					</p>
-					<Link to="" className="btn btn-outline-warning btn-sm">
-						Upgrade your plan
-					</Link>
 				</div>
 			</SimpleBar>
 		</div>
