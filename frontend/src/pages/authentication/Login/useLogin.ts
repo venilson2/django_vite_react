@@ -19,9 +19,9 @@ export default function useLogin() {
 	const schemaResolver = yup.object().shape({
 		email: yup
 			.string()
-			.email('Please enter a valid email')
-			.required('Please enter Username'),
-		password: yup.string().required('Please enter Password'),
+			.email('Por favor digite um email válido')
+			.required('Por favor insira o nome de usuário'),
+		password: yup.string().required('Por favor insira a senha'),
 	})
 
 	const { control, handleSubmit } = useForm({
@@ -35,7 +35,7 @@ export default function useLogin() {
 	type LoginFormFields = yup.InferType<typeof schemaResolver>
 
 	// const redirectUrl = useMemo(() => (location.state?.from.pathname, location.pathname ?? "/"), [location.state]);
-	const redirectUrl = searchParams.get('next') ?? '/dashboards/analytics'
+	const redirectUrl = searchParams.get('next') ?? '/dashboard'
 
 	const login = handleSubmit(async function (values: LoginFormFields) {
 		setLoading(true)
@@ -46,7 +46,7 @@ export default function useLogin() {
 					...(res.data ?? {}),
 					token: res.data.token,
 				})
-				toast.success('Successfully logged in. Redirecting....', {
+				toast.success('Login realizado com sucesso. Redirecionando....', {
 					position: 'top-right',
 					duration: 2000,
 				})
