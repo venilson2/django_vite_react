@@ -25,12 +25,12 @@ const ProfileDropdown = () => {
 				as="a"
 				className="nav-link waves-effect waves-light nav-user"
 			>
-				<span className="ms-1 nav-user-name hidden-sm">Fulano</span>
 				<Image
 					src={"/static/images/users/user-5.jpg"}
 					alt="profile-user"
 					className="rounded-circle thumb-xs "
 				/>
+				<span className="ms-1 nav-user-name hidden-sm fw-bold">Admin</span>
 			</DropdownToggle>
 			<DropdownMenu className="dropdown-menu-end">
 				{/* <DropdownItem>
@@ -41,7 +41,7 @@ const ProfileDropdown = () => {
 					<FiSettings className="align-self-center icon-xs icon-dual me-1" />{' '}
 					Settings
 				</DropdownItem> */}
-				<div className="dropdown-divider mb-0"></div>
+				{/* <div className="dropdown-divider mb-0"></div> */}
 				<DropdownItem onClick={() => logout()}>
 					<FiPower className="align-self-center icon-xs icon-dual me-1" />{' '}
 					Logout

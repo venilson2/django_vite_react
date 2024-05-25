@@ -88,8 +88,8 @@ const AudienceOverviewChart = () => {
 	return (
 		<ComponentContainerCard
 			title="Vendas"
-			label="This Year"
-			menuItems={['Today', 'Last Week', 'Last Month', 'This Year']}
+			label="Maio"
+			menuItems={['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']}
 		>
 			<div>
 				<ReactApexChart

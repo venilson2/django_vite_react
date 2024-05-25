@@ -19,7 +19,7 @@ const StatisticWidget = ({
 						<p className="text-dark mb-0 fw-semibold h5">{title}</p>
 						<h2 className="my-2">{state}</h2>
 						<p className="mb-0 text-truncate text-muted">
-							<span className={`fully-sense-text-${variant} fw-semibold h6`}>
+							<span className={`fully-sense-text-${variant} fw-bold h5`}>
 								{variant == 'danger' ? (
 									<i className="mdi mdi-trending-down" />
 								) : (

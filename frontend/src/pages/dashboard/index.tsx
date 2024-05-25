@@ -6,15 +6,15 @@ import WelcomeHeader from '@/components/WelcomeHeader'
 
 const Analytics = () => (
 	<>
-		<WelcomeHeader title="Fulano" />
+		<WelcomeHeader title="Admin" />
 		<Row>
-			<Col lg={12}>
+			<Col>
 				<Statistics />
 				<AudienceOverviewChart />
 			</Col>
 		</Row>
 		<Row>
-			<Col lg={12}>
+			<Col>
 				<TrafficReports />
 			</Col>
 		</Row>
