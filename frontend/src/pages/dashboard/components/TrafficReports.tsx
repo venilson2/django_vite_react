@@ -1,6 +1,5 @@
 import { ComponentContainerCard } from '@/components'
-import { Link } from 'react-router-dom'
-import { salesReports, trafficReports } from '../data'
+import { salesReports } from '../data'
 import { Badge } from 'react-bootstrap'
 
 const TrafficReports = () => {
