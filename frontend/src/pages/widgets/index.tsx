@@ -11,8 +11,8 @@ import Faqs from './components/Faqs'
 import TrafficSources from './components/TrafficSources'
 import CustomerSatisfaction from './components/CustomerSatisfaction'
 import SessionsDeviceWidget from './components/SessionsDeviceWidget'
-import Statistics from '../dashboard/Analytics/components/Statistics'
 import TasksPerformanceChart from '../apps/projects/Overview/components/TasksPerformanceChart'
+import Statistics from '../dashboard/components/Statistics'
 
 const Widgets = () => {
 	return (

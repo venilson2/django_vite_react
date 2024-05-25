@@ -7,6 +7,7 @@ export type StatisticType = {
 	change: string
 	subTitle: string
 	variant: string
+	backgroundColor: string
 }
 
 export type PageViews = {

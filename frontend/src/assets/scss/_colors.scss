@@ -1,0 +1,124 @@
+// Fully-Sense Colors
+
+// Info Colors
+$success-color: #39c6b1; // Utilizado para mensagens e botões de informação
+
+// Danger Colors
+$danger-color: #f93c65; // Utilizado para alertas e botões de perigo
+
+// Orange Colors
+$orange-light-color: #fbebdd; // Utilizado para fundos de cartões e seções leves
+$orange-color: #f0a35d; // Utilizado para bordas e destaques em laranja
+
+// Success Colors
+$green-light-color: #68846b; // Utilizado para mensagens de sucesso leves
+$green-color: #1e352f; // Utilizado para mensagens de sucesso principais
+
+// Neutral Colors
+$neutral-0: #f5f6fa;
+$neutral-1: #eff0ee;
+$neutral-2: #f6f3ee;
+$neutral-3: #e3dbcb;
+$neutral-4: #d0d5d3;
+$neutral-5: #b5bbaf;
+$neutral-6: #e1d8c7;
+
+// Color Map
+$colors: (
+    'success': #39c6b1,
+    'danger': #f93c65,
+    'orange-light': #fbebdd,
+    'orange': #f0a35d,
+    'green-light': #68846b,
+    'green-dark': #1e352f,
+    'neutral-0': #f5f6fa,
+    'neutral-1': #eff0ee,
+    'neutral-2': #f6f3ee,
+    'neutral-3': #e3dbcb,
+    'neutral-4': #d0d5d3,
+    'neutral-5': #b5bbaf,
+    'neutral-6': #e1d8c7,
+);
+
+// Function to get colors from the map
+@function get-color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+// Color Classes
+.fully-sense-text-danger {
+    color: get-color('danger');
+}
+
+.fully-sense-bg-danger {
+    background-color: get-color('danger');
+}
+
+
+.fully-sense-text-green-light {
+    color: get-color('green-light');
+}
+
+.fully-sense-bg-green-light {
+    background-color: get-color('green-light');
+}
+
+.fully-sense-text-info {
+    color: get-color('info');
+}
+
+.fully-sense-bg-info {
+    background-color: get-color('info');
+}
+
+.fully-sense-text-success {
+    color: get-color('success');
+}
+
+.fully-sense-bg-success {
+    background-color: get-color('success');
+}
+
+.fully-sense-text-neutral-0 {
+    color: get-color('neutral-0');
+}
+
+.fully-sense-bg-neutral-0 {
+    background-color: get-color('neutral-0');
+}
+
+.fully-sense-text-neutral-1 {
+    color: get-color('neutral-1');
+}
+
+.fully-sense-bg-neutral-1 {
+    background-color: get-color('neutral-1');
+}
+
+
+.fully-sense-text-neutral-2 {
+    color: get-color('neutral-2');
+}
+
+.fully-sense-bg-neutral-2 {
+    background-color: get-color('neutral-2');
+}
+
+
+
+
+.fully-sense-text-neutral-4 {
+    color: get-color('neutral-4');
+}
+
+.fully-sense-bg-neutral-4 {
+    background-color: get-color('neutral-4');
+}
+
+.fully-sense-text-orange-light {
+    color: get-color('orange-light');
+}
+
+.fully-sense-bg-orange-light {
+    background-color: get-color('orange-light');
+}

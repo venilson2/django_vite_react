@@ -24,6 +24,7 @@ const statisticsData: StatisticType[] = [
 		subTitle: 'Crescimento',
 		change: '8.5',
 		variant: 'success',
+		backgroundColor: 'fully-sense-bg-orange-light',
 	},
 	{
 		title: 'Afiliados',
@@ -32,6 +33,7 @@ const statisticsData: StatisticType[] = [
 		subTitle: 'Realizou uma ou mais vendas',
 		change: '1.5',
 		variant: 'success',
+		backgroundColor: 'fully-sense-bg-neutral-4',
 	},
 	{
 		title: 'Vendas',
@@ -40,6 +42,7 @@ const statisticsData: StatisticType[] = [
 		subTitle: 'Total: 1 pedido(s)',
 		change: '35',
 		variant: 'danger',
+		backgroundColor: 'fully-sense-bg-neutral-1',
 	},
 	{
 		title: 'Comissões',
@@ -48,6 +51,7 @@ const statisticsData: StatisticType[] = [
 		subTitle: '',
 		change: 'Ver Detalhes',
 		variant: 'success',
+		backgroundColor: 'fully-sense-bg-neutral-2',
 	},
 ]
 

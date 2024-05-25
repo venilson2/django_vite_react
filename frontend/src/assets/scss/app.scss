@@ -56,8 +56,6 @@ File: App Css
 @import "plugins/tinymce";
 @import "plugins/ui-slider";
 
-
-
 // Pages
 @import "pages/avatar";
 @import "pages/general";
@@ -82,3 +80,7 @@ File: App Css
 @import "nouislider/distribute/nouislider.css";
 @import "litepicker/dist/css/style.css";
 @import "leaflet/dist/leaflet.css";
+
+
+//custom fully-sense
+@import 'colors';

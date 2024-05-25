@@ -8,6 +8,7 @@ const StatisticWidget = ({
 	title,
 	variant,
 	icon,
+	backgroundColor
 }: StatisticType) => {
 	const Icon = icon
 	return (
@@ -15,22 +16,22 @@ const StatisticWidget = ({
 			<CardBody>
 				<Row className="d-flex justify-content-center">
 					<Col>
-						<p className="text-dark mb-0 fw-semibold">{title}</p>
-						<h3 className="m-0">{state}</h3>
+						<p className="text-dark mb-0 fw-semibold h5">{title}</p>
+						<h2 className="my-2">{state}</h2>
 						<p className="mb-0 text-truncate text-muted">
-							<span className={`text-${variant}`}>
+							<span className={`fully-sense-text-${variant} fw-semibold h6`}>
 								{variant == 'danger' ? (
 									<i className="mdi mdi-trending-down" />
 								) : (
 									<i className="mdi mdi-trending-up" />
 								)}
-								{change}%
+								{change}
 							</span>{' '}
 							{subTitle}
 						</p>
 					</Col>
 					<div className="col-auto align-self-center">
-						<div className="report-main-icon bg-light-alt">
+						<div className={`report-main-icon ${backgroundColor}`}>
 							<Icon className="align-self-center text-muted icon-sm" />
 						</div>
 					</div>

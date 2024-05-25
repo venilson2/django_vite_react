@@ -13,7 +13,7 @@ const AudienceOverviewChart = () => {
 				autoSelected: 'zoom',
 			},
 		},
-		colors: ['#2a77f4', '#a5c2f1'],
+		colors: ['#d7d1c1', '#68846b'],
 		dataLabels: {
 			enabled: false,
 		},

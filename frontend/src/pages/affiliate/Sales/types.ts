@@ -29,3 +29,13 @@ export type PopularProductsType = {
 
 	status: string
 }
+
+export type CustomersDetailsType = {
+	id: number
+	name: string
+	ext: string
+	city: string
+	startDate: string
+	completion: string
+	subRows: object
+}

@@ -15,6 +15,7 @@ const Statistics = () => {
 							icon={item.icon}
 							state={item.state}
 							subTitle={item.subTitle}
+							backgroundColor={item.backgroundColor}
 						/>
 					</Col>
 				)

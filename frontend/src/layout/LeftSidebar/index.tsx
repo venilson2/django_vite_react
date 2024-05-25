@@ -35,18 +35,6 @@ const LeftSidebar = () => {
 
 			<SimpleBar className="menu-content h-100">
 				<AppMenu menuItems={getMenuItems()} />
-
-				<div className="update-msg text-center">
-					<Link
-						to=""
-						className="float-end close-btn text-white"
-						data-dismiss="update-msg"
-						aria-label="Close"
-						aria-hidden="true"
-					>
-						<i className="mdi mdi-close"></i>
-					</Link>
-				</div>
 			</SimpleBar>
 		</div>
 	)

@@ -34,7 +34,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
 			<Suspense>
 				<LeftSideBar />
 			</Suspense>
-			<div className="page-wrapper">
+			<div className="page-wrapper fully-sense-bg-neutral-0">
 				<Suspense fallback={<div />}>
 					<TopNavbar />
 				</Suspense>
