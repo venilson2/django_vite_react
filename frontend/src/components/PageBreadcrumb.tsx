@@ -5,11 +5,12 @@ import { Link } from 'react-router-dom'
 import { FiCalendar, FiDownload } from 'react-icons/fi'
 
 interface PageTitleProps {
-	subName: string
+	subName?: string
 	title: string
+	isShowBreadcrumb?: boolean
 }
 
-const PageBreadcrumb = ({ title, subName }: PageTitleProps) => {
+const PageBreadcrumb = ({ title, subName, isShowBreadcrumb = true }: PageTitleProps) => {
 	return (
 		<>
 			<PageMetaData title={title} />
@@ -18,13 +19,14 @@ const PageBreadcrumb = ({ title, subName }: PageTitleProps) => {
 					<div className="page-title-box">
 						<Row>
 							<Col>
-								<h4 className="page-title">{title}</h4>
-								<ol className="breadcrumb">
+								<h2>{title}</h2>
+								{isShowBreadcrumb && <ol className="breadcrumb">
 									<li className="breadcrumb-item">
 										{subName}
 									</li>
 									<li className="breadcrumb-item active">{title}</li>
 								</ol>
+								}
 							</Col>
 							<div className="col-auto align-self-center d-flex gap-1">
 								<Link

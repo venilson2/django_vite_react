@@ -61,7 +61,7 @@ const Sales = () => {
 
 	return (
 		<>
-			<PageBreadcrumb subName="Afiliados" title="Vendas" />
+			<PageBreadcrumb title="Vendas" isShowBreadcrumb={false}/>
 			<Row>
 				<Col lg={12}>
 					<Card>

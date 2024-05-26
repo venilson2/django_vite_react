@@ -1,10 +1,11 @@
 /* eslint-disable react-refresh/only-export-components */
+import Sales from '@/pages/sales'
 import { lazy } from 'react'
 import { Navigate, RouteProps } from 'react-router-dom'
 
 //Dashboards
 const Dashboard = lazy(() => import('@/pages/dashboard'))
-const SalesAffiliate = lazy(() => import('@/pages/affiliate/Sales'))
+const Affiliates = lazy(() => import('@/pages/affiliates'))
 
 const Login = lazy(() => import('@/pages/authentication/Login'))
 const Error404 = lazy(() => import('@/pages/authentication/Error404'))
@@ -31,9 +32,17 @@ const dashboardRoutes: RoutesProps[] = [
 
 const affiliateRoutes: RoutesProps[] = [
 	{
-		path: '/afiliados/vendas',
+		path: '/afiliados',
 		name: 'Sales',
-		element: <SalesAffiliate />,
+		element: <Affiliates />,
+	},
+]
+
+const salesRoutes: RoutesProps[] = [
+	{
+		path: '/vendas',
+		name: 'Sales',
+		element: <Sales />
 	},
 ]
 
@@ -63,6 +72,7 @@ const authRoutes: RoutesProps[] = [
 const allAdminRoutes = [
 	...dashboardRoutes,
 	...affiliateRoutes,
+	...salesRoutes,
 ]
 
 const allBlankRoutes = [...authRoutes]

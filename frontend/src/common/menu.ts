@@ -1,11 +1,8 @@
 import type { IconType } from 'react-icons'
 import {
-	FiBox,
-	FiFilePlus,
 	FiGrid,
 	FiHome,
-	FiLayers,
-	FiLock,
+	FiDollarSign
 } from 'react-icons/fi'
 
 export type MenuItemType = {
@@ -33,15 +30,16 @@ export const VERTICAL_MENU_ITEMS: MenuItemType[] = [
 	},
 	{
 		key: 'affiliates',
-		icon: FiGrid,
 		label: 'Afiliados',
 		isTitle: false,
-		children: [
-			{
-				key: 'sales',
-				label: 'Vendas',
-				url: '/afiliados/vendas',
-			}
-		],
+		url: '/afiliados',
+		icon: FiGrid,
+	},
+	{
+		key: 'sales',
+		label: 'Vendas',
+		isTitle: false,
+		url: '/vendas',
+		icon: FiDollarSign,
 	}
 ]
