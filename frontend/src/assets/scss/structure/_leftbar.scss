@@ -83,15 +83,13 @@ File: Leftbar
                 background-color: $green-dark !important;
                 color: $gray-300 !important;
                 border-radius: 6px;
-                
-                .menu-icon {
-                    color: $orange !important;
-                    fill: rgba($orange, 0.12);
-                }
 
+                .menu-icon,
                 i {
                     color: $orange !important;
-                    background-color: $green-dark !important;
+                    fill: rgba($orange, 0.12);
+                    // transition: color 0.3s ease-out, background-color 0.3s ease-out;
+                    transition: .3s;
                 }
             }
         }
@@ -104,39 +102,37 @@ File: Leftbar
             transition: all 0.3s ease-out;
             font-weight: 400;
 
-            .menu-icon {
+            .menu-icon,
+            i {
                 width: 18px;
                 height: 18px;
-                color: $sidebar-icon-color;
-                fill: rgba($sidebar-icon-color, 0.12);
+                color: $primary; // Cor padrão dos ícones
+                fill: rgba($primary, 0.12); // Usando a cor primária
                 margin-right: 6px;
                 stroke-width: 1px;
+                transition: color 0.3s ease-out, fill 0.3s ease-out; // Adiciona transição de cor
             }
 
             &:hover {
                 background-color: $green-dark !important;
                 color: $gray-300 !important;
                 border-radius: 6px;
+                transition: background-color 0.3s ease-out, color 0.3s ease-out;
 
+                .menu-icon,
                 i {
                     color: $orange !important;
-                    background-color: $green-dark !important;
                 }
             }
 
             &.active {
-                background-color: $green-dark !important;
                 color: $gray-300 !important;
                 border-radius: 6px;
 
-                .menu-icon {
-                    color: $orange !important;
-                    fill: rgba($orange, 0.12);
-                }
-
+                .menu-icon,
                 i {
                     color: $orange !important;
-                    background-color: $green-dark !important;
+                    fill: rgba($orange, 0.12);
                 }
             }
 
@@ -145,7 +141,6 @@ File: Leftbar
                 display: inline-block;
                 font-size: 16px;
                 opacity: 0.9;
-                color: $sidebar-icon-color;
 
                 &.ti-control-record {
                     font-size: 8px;
@@ -287,6 +282,7 @@ File: Leftbar
         }
     }
 }
+
 
 // Para futuras edições: Os estilos do item ativo (active) são definidos aqui:
 // 1. `.left-sidenav-menu li.active > a`
