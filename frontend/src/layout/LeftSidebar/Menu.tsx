@@ -52,7 +52,7 @@ const MenuItemWithChildren = ({
 			>
 				{Icon && (
 					<span>
-						<Icon size={18} className="menu-icon align-self-center" color='#68846b' />
+						<Icon size={18} className="menu-icon align-self-center" />
 					</span>
 				)}
 				<span className='fw-normal'> {item.label}</span>
@@ -122,7 +122,7 @@ const MenuItemLink = ({ item, className }: SubMenus) => {
 			data-menu-key={item.key}
 		>
 			{Icon ? (
-				<Icon size={18} className="menu-icon align-self-center" color='#68846b'/>
+				<Icon size={18} className="menu-icon align-self-center"/>
 			) : (
 				<i className="ti-control-record" />
 			)}

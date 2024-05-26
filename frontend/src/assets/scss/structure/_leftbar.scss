@@ -61,6 +61,7 @@ File: Leftbar
     padding-left: 0;
     margin-bottom: 0;
     padding: 16px;
+
     .menu-label {
         text-transform: uppercase;
         font-size: 10px;
@@ -74,49 +75,87 @@ File: Leftbar
         list-style: none;
         display: block;
         width: 100%;
-        margin-top: 6px;
+        margin: 6px 0;
+
+        &.active,
+        &.mm-active {
+            > a {
+                background-color: $green-dark !important;
+                color: $gray-300 !important;
+                border-radius: 6px;
+                
+                .menu-icon {
+                    color: $orange !important;
+                    fill: rgba($orange, 0.12);
+                }
+
+                i {
+                    color: $orange !important;
+                    background-color: $green-dark !important;
+                }
+            }
+        }
+
         > a {
             display: flex;
             align-items: center;
-            padding: 4px 0px;
+            padding: 10px 8px;
             color: $sidebar-item-color;
             transition: all 0.3s ease-out;
             font-weight: 400;
-            .menu-icon{
+
+            .menu-icon {
                 width: 18px;
                 height: 18px;
                 color: $sidebar-icon-color;
-                fill: rgba($sidebar-icon-color,0.12);
+                fill: rgba($sidebar-icon-color, 0.12);
                 margin-right: 6px;
                 stroke-width: 1px;
             }
-            &.active{
-                .menu-icon{
-                    color: $primary;
-                    fill: rgba($primary,0.12);
+
+            &:hover {
+                background-color: $green-dark !important;
+                color: $gray-300 !important;
+                border-radius: 6px;
+
+                i {
+                    color: $orange !important;
+                    background-color: $green-dark !important;
                 }
             }
 
-            &:hover {
-                color: $sidebar-sub-item-hover-color;
-                i{
-                    color: $sidebar-icon-hover-color;
+            &.active {
+                background-color: $green-dark !important;
+                color: $gray-300 !important;
+                border-radius: 6px;
+
+                .menu-icon {
+                    color: $orange !important;
+                    fill: rgba($orange, 0.12);
+                }
+
+                i {
+                    color: $orange !important;
+                    background-color: $green-dark !important;
                 }
             }
+
             i {
                 width: 25px;
                 display: inline-block;
                 font-size: 16px;
                 opacity: 0.9;
                 color: $sidebar-icon-color;
-                &.ti-control-record{
+
+                &.ti-control-record {
                     font-size: 8px;
                     vertical-align: middle;
                     margin-right: 0;
                 }
             }
-            span{
-                i{
+
+            span {
+                i {
                     color: $sidebar-arrow-color;
                 }
             }
@@ -134,7 +173,8 @@ File: Leftbar
 
                     &:hover {
                         color: $sidebar-sub-item-hover-color;
-                        i{
+
+                        i {
                             color: $primary;
                         }
                     }
@@ -143,29 +183,32 @@ File: Leftbar
         }
 
         &.mm-active {
-            .menu-arrow{
+            .menu-arrow {
                 i {
                     &:before {
                         content: "\F140";
                     }
                 }
             }
-            .mm-active a .menu-arrow.left-has-menu{
+
+            .mm-active a .menu-arrow.left-has-menu {
                 i {
                     &:before {
                         content: "\F140";
                     }
                 }
             }
-            .menu-arrow.left-has-menu{
+
+            .menu-arrow.left-has-menu {
                 i {
                     &:before {
                         content: "\F142";
                     }
                 }
             }
-            li a{
-                menu-arrow.left-has-menu {
+
+            li a {
+                .menu-arrow.left-has-menu {
                     i {
                         &:before {
                             content: "\F142";
@@ -174,24 +217,28 @@ File: Leftbar
                 }
             }
 
-            .mm-active{
-                >a{
+            .mm-active {
+                > a {
                     color: $sidebar-sub-item-active-color;
                     background: $sidebar-light-bg;
-                    &.active{
+
+                    &.active {
                         color: $sidebar-item-active-color;
                         background-color: transparent;
                     }
-                    i{
+
+                    i {
                         color: $sidebar-item-active-color;
                     }
                 }
-                .menu-arrow.left-has-menu i:before{
+
+                .menu-arrow.left-has-menu i:before {
                     content: "\F140";
                 }
-                .mm-show{
-                    li{
-                        a.active{
+
+                .mm-show {
+                    li {
+                        a.active {
                             color: $sidebar-sub-item-active-color;
                             font-weight: 500;
                         }
@@ -199,33 +246,52 @@ File: Leftbar
                 }
             }
 
-            > a  {
+            > a {
                 color: $sidebar-item-active-color;
                 border-radius: 4px;
-                i{
+
+                i {
                     color: $sidebar-item-active-color;
                 }
             }
-            .nav-item.active{
-                a.nav-link.active{
-                    background-color:transparent;
+
+            .nav-item.active {
+                a.nav-link.active {
+                    background-color: transparent;
                     color: $primary;
-                    i{
+
+                    i {
                         color: $sidebar-item-hover-color;
                     }
                 }
             }
-
         }
     }
 
     .menu-arrow {
         margin-left: auto;
+
         i {
             width: 15px;
         }
     }
+
+    .nav-item.active {
+        a.nav-link.active {
+            background-color: transparent;
+            color: $primary;
+
+            i {
+                color: $sidebar-item-hover-color;
+            }
+        }
+    }
 }
+
+// Para futuras edições: Os estilos do item ativo (active) são definidos aqui:
+// 1. `.left-sidenav-menu li.active > a`
+// 2. `.left-sidenav-menu li.mm-active > a`
+// 3. `.left-sidenav-menu li > a.active`
 @media (max-width: 1316.98px) {
     .left-sidenav{
         margin-top: $header-height;
